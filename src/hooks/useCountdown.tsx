@@ -8,7 +8,7 @@ interface ICountdown {
 
 export default function useCountdown() {
   const { getPermissionToShowNotifications } = notification();
-  const [startTime, setStartTime] = useState(1.2);
+  const [startTime, setStartTime] = useState(2);
   const [cdBlocked, setCdblocked] = useState(false);
   const [intervalId, setIntervalId] = useState<number>();
   const [countdown, setCountdown] = useState<ICountdown>({
@@ -20,7 +20,6 @@ export default function useCountdown() {
   const updateCountDown = () => {
     let minutes = Math.floor(time / 60);
     let seconds = time % 60;
-    console.log("time:", minutes, seconds);
     if (time >= 0) {
       setCountdown({
         min: minutes > 9 ? minutes : `0${minutes}`,
