@@ -22,11 +22,11 @@ const initialState: timerProps = {
   },
   shortBreak: {
     time: 5,
-    activate: true,
+    activate: false,
   },
   longBreak: {
     time: 15,
-    activate: true,
+    activate: false,
   },
 };
 

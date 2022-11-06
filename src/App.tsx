@@ -40,13 +40,6 @@ function App() {
       <button onClick={startCountdown}>start</button>
       <button onClick={pauseCountdown}>pause</button>
       <br />
-      <button
-        onClick={() =>
-          setTimerData({ ...timer, pomodoro: { ...timer.pomodoro, time: 21 } })
-        }
-      >
-        change pomodorp
-      </button>
     </MainStyles>
   );
 }
